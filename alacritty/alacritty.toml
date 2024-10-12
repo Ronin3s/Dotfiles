@@ -1,0 +1,29 @@
+import = ["/home/ronin/.config/alacritty/colors.toml", "/home/ronin/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = true 
+
+[shell]
+program = "/usr/bin/tmux"
+args = ["new-session", "-A", "-s", "home"]
+
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+
+[window]
+decorations = "Full"
+opacity = 0.9
+padding = { x = 5 , y = 5 }
+
+[scrolling]
+history = 100000
+multiplier = 8
+
+[selection]
+save_to_clipboard = true
